@@ -12,8 +12,10 @@ console.log('This line will be call right before we start invoking the sampleFun
 sampleFunction(); // we are invoking the function right here
 
 function nextFunction() {
+    debugger;
     var i = 10;
     console.log('This is the value of i right before the while line below');
+    
     while (i--) {
         console.log('When you see this line, the value of i has just been subtracted by 1');       
         console.log('The value of i is currently: ' + i);
